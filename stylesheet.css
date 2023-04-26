@@ -334,6 +334,11 @@ main {
     background-color: #c20e1a;
 }
 
+.btn-small:hover {
+    background-color: #c20e1a;
+    opacity: 0.6;
+}
+
 .btn-large:hover {
     background-color: #c20e1a;
     opacity: 0.6;
