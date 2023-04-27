@@ -289,7 +289,18 @@ main {
 }
 @media screen and (max-width: 580px) {
     .daily-news-picture { float: left; margin: 20px 5px 0 15px !important}
+}
 
+@media screen and (max-width: 430px) {
+    .pejskostranka-picture { float: left; margin: 20px 5px 0 15px !important}
+    .pejsek { display: block !important;}
+}
+
+@media screen and (max-width: 380px) {
+    .daily-body { display: inline-block !important;}
+    .pejskostranka-picture {width: 100% !important; margin: auto !important;}
+    .daily-news-picture {width: 100% !important; margin: auto !important; height: 200px !important;}
+    .daily-news-img { width: 200px !important; height: 200px !important;}
 }
 
 @media screen and (max-width: 900px) and (min-width: 899px) {
