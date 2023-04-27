@@ -287,14 +287,37 @@ main {
     .daily-news-picture { float: left; margin: 20px 5px 0 15px !important}
 
 }
+
+@media screen and (min-width: 580px) {
+    .daily-archiv-more {display: flex !important;}
+}
+
 @media screen and (max-width: 580px) {
     .daily-news-picture { float: left; margin: 20px 5px 0 15px !important}
-    .daily-archiv {display: block !important;}
+    .daily-archiv-more {display: block !important;}
+    .daily-archiv:nth-child(1),
+    .daily-archiv:nth-child(2),
+    .daily-archiv:nth-child(3),
+    .daily-archiv:nth-child(4),
+    .daily-archiv:nth-child(5) {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .pejsek-more {display: flex !important;}
 }
 
 @media screen and (max-width: 430px) {
     .pejskostranka-picture { float: left; margin: 20px 5px 0 15px !important}
-    .pejsek { display: block !important;}
+    .pejsek-more {display: block !important; min-height: 230px;}
+    .pejsek:nth-child(1),
+    .pejsek:nth-child(2),
+    .pejsek:nth-child(3),
+    .pejsek:nth-child(4),
+    .pejsek:nth-child(5) {
+        display: block !important; min-height: 230px;
+    }
 }
 
 @media screen and (max-width: 395px) {
@@ -1005,4 +1028,7 @@ form .dropdown-content {
     width: 100%;
     text-align: center;
     margin-bottom: 5px;
+}
+.test {
+    background-color: yellow !important;
 }
