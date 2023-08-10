@@ -38,7 +38,7 @@ html,body {
     padding:0;
     box-sizing:border-box;
     font-family:'Anton',sans-serif;
-    font-size:10px
+    font-size:10px;
 }
 
 .nav {
@@ -95,13 +95,16 @@ html,body {
     background-color:transparent!important
 }
 
-.hero-image .navigacni-hover:hover {
+.navigacni-hover:hover {
     opacity:.25;
     background-color:rgba(0,0,0,0)!important
 }
+.navigacni-hover {
+    margin-top: 25px;
+}
 
 .hero {
-    height:70vh;
+    height:50vh;
     background:linear-gradient(#fff,#dde3ee,#bbc7de,#99accd,#7692bd,#5079ac,#1e619c);
     display:flex;
     align-items:center;
@@ -110,16 +113,17 @@ html,body {
 }
 
 .hero-image {
-    text-align:center;
+    text-align:right;
     width:100%
 }
 
 .frekvence {
     position:absolute;
-    align-self:flex-end;
+    top:240px;
+    left: 200px;
     width:100%;
     color:#fff;
-    max-width:1200px;
+    max-width: 700px;
     white-space:nowrap;
     overflow:hidden;
     line-height:65px;
@@ -236,16 +240,23 @@ html,body {
 }
 
 .nowplay {
-    display:flex;
+
     margin-left:40px;
-    margin-top:-15px;
+    margin-top: 10px;
     color:#1e619c;
     float:left;
-    padding-left:3rem
+    padding-left:3rem;
+    line-height: 25px;
+}
+
+.nowplay-music {
+    display:flex;
 }
 
 .nowplay p {
-    font-size:1.5rem
+    font-size:1.5rem;
+    margin: 0;
+    text-align: left;
 }
 
 .carousel {
@@ -268,16 +279,17 @@ html,body {
 }
 
 main {
-    background:linear-gradient(#1e619c 2%,#5079ac,#7692bd,#99accd,#bbc7de,#dde3ee,#fff,#fff,#dde3ee,#bbc7de,#99accd,#7692bd,#5079ac,#1e619c)
+    background:linear-gradient(#1e619c 2%,#5079ac,#7692bd,#99accd,#bbc7de,#dde3ee,#fff,#fff,#dde3ee,#bbc7de,#99accd,#7692bd,#5079ac,#1e619c);
 }
 
 .casual-news,.daily-news {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center
+    justify-content:center;
+    margin-top: 7px;
 }
 
-@media screen and (min-width: 899px) {
+@media screen and (min-width: 1350px) {
     .daily-news {
         flex-wrap:nowrap
     }
@@ -287,24 +299,13 @@ main {
     }
 }
 
-@media screen and (min-width: 900px) and (max-width:1200px) {
-    .daily-news-picture {
-        float:left;
-        margin:20px 5px 0 15px !important
-    }
-}
-
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 501px) {
     .daily-archiv-more {
         display:flex!important
     }
 }
 
-@media screen and (max-width: 580px) {
-    .daily-news-picture {
-        float:left;
-        margin:20px 5px 0 15px !important
-    }
+@media screen and (max-width: 500px) {
 
     .daily-archiv-more {
         display:block!important
@@ -315,13 +316,13 @@ main {
     }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 500px) {
     .pejsek-more {
         display:flex!important
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
     .pejskostranka-picture {
         float:left;
         margin:20px 5px 0 15px !important
@@ -338,7 +339,7 @@ main {
     }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 500px) {
     .daily-body {
         display:inline-block!important
     }
@@ -360,20 +361,7 @@ main {
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 899px) {
-    .daily-news-picture {
-        float:left;
-        margin:20px 5px 0 15px !important
-    }
-}
-
-@media screen and (max-width: 899px) and (min-width: 580px) {
-    .daily {
-        display:flex
-    }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 501px) {
     .daily {
         display:flex
     }
@@ -381,7 +369,7 @@ main {
 
 .music-news {
     text-align:center;
-    margin:10px;
+    margin:15px;
     width:474.67px
 }
 
@@ -444,7 +432,8 @@ main {
 
 .daily-news-title {
     margin-bottom:0;
-    font-size:2.2rem
+    font-size:2.2rem;
+    margin-right:5px;
 }
 
 .daily-body {
@@ -453,15 +442,15 @@ main {
 
 .daily {
     align-items:center;
-    margin:10px;
-    max-width:722px;
+    margin:12px;
+    max-width: 1000px;
     text-align:center
 }
 
 .daily-news-picture {
     height:240px;
     width:240px;
-    margin:0 0 0 15px
+    margin:0 0 0 0
 }
 
 .daily-news-img {
@@ -472,7 +461,9 @@ main {
 .daily-news-content {
     font-family:sans-serif;
     font-size:15px;
-    margin:10px 30px
+    margin:10px 30px;
+    max-height: 70px;
+    overflow: hidden;
 }
 
 .daily-news-date {
@@ -490,9 +481,9 @@ h1 {
     margin-left:12px;
     margin-right:12px;
     color:#fff;
-    padding:25px;
+    padding:15px;
     padding-left:80px;
-    font-size:4rem
+    font-size:3rem
 }
 
 .news {
@@ -507,7 +498,7 @@ h1 {
 
 .page-footer {
     background-color:#1e619c!important;
-    font-size:1.2rem
+    font-size:1.4rem
 }
 
 .page-footer a:hover {
@@ -518,27 +509,53 @@ h1 {
     color:#c20e1a
 }
 
-.partneri {
-    background:linear-gradient(#fff 55%,#dde3ee,#bbc7de,#99accd,#7692bd,#5079ac,#1e619c)
-}
 
 .partneri-images {
-    padding-bottom:50px;
+    margin: auto;
+    max-width: 80%;
     display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .partneri-image img {
-    max-height:300px;
+    max-height:200px;
     height:auto;
-    max-width:100%
+    max-width:100%;
+    filter: grayscale(100%);
+}
+
+.partneri-image img:hover {
+    filter: none;
 }
 
 .partneri-image {
+    display: flex;
+    align-items: center;
     margin:25px;
-    width:580px;
-    text-align:center
+    justify-content:center;
+    flex-basis: 100%;
+}
+
+@media (max-width: 1000px) {
+    .partneri-images {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .partneri-images {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .partneri-image img {
+        max-height:150px;
+
+    }
+    .partneri-image {
+        margin:10px;
+    }
 }
 
 .program {
@@ -552,7 +569,7 @@ h1 {
     margin-left:12px;
     margin-right:12px;
     color:#1e619c;
-    font-size:4rem;
+    font-size:4.2rem;
     text-align:left;
     padding:150px 80px 25px
 }
@@ -896,16 +913,13 @@ nav ul li {
     background:transparent!important
 }
 
-@media screen and (max-width:1350px) and (min-width: 993px) {
-    .nowplay {
-        display:none
-    }
-}
-
 @media screen and (max-width: 993px) and (min-width: 708px) {
     .play {
         float:right!important;
-        padding-right:2rem
+        padding-right:8rem;
+    }
+    .nowplay {
+        display:none;
     }
 }
 
@@ -915,21 +929,12 @@ nav ul li {
         padding-right:7rem
     }
 
-    .nowplay {
-        display:none
-    }
-
-    .hero {
-        height:40vh
-    }
-
-    .mini-logo {
-        display:inline-block!important
-    }
-
     .program-nadpis {
         padding-right:0!important;
         padding-left:0!important
+    }
+    .nowplay {
+        display:none;
     }
 }
 
@@ -944,15 +949,6 @@ nav ul li {
 }
 
 .brand-logo img {
-    padding-top:6.5px
-}
-
-.top-logo {
-    text-align:center
-}
-
-.top-logo img {
-    transform:translateY(25%);
     padding-top:6.5px
 }
 
@@ -1015,6 +1011,7 @@ nav ul li {
 .hero-media {
     position:absolute;
     right:0;
+    top:160px;
     display:flex;
     flex-direction:column;
     margin-right:25px
@@ -1030,152 +1027,29 @@ nav ul li {
 }
 
 .hero-kavarna {
-    left:-160px;
-    top:260px;
+    left: 365px;
+    top:330px;
     position:absolute
 }
 
 .hero-kavarna-small {
-    left:-80px;
-    top:170px;
+    left:200px;
+    top:330px;
     position:absolute;
     display:none
 }
-
-.otoceni {
-    transform:rotate(7deg);
-    -ms-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -o-transform:rotate(90deg)
-}
-
-@media screen and (max-width:850px) and (min-width:708px) {
-    .hero-media {
-        margin-right:10px!important;
-        margin-top:20Px
-    }
-
-    .icon-facebook {
-        font-size:36px!important
-    }
-
-    .icon-instagram {
-        font-size:36px!important
-    }
-
-    .icon-tiktok {
-        font-size:36px!important
-    }
-}
-
-@media screen and (max-width:708px) {
-    .hero-media {
-        margin-right:20px!important;
-        margin-top:0
-    }
-
-    .icon-facebook {
-        font-size:24px!important
-    }
-
-    .icon-instagram {
-        font-size:24px!important
-    }
-
-    .icon-tiktok {
-        font-size:24px!important
-    }
-
-    .hero-kavarna {
-        display:none!important
-    }
-
-    .hero-kavarna-small {
-        display:block!important
-    }
-}
-
-@media screen and (max-height:549px) {
-    .hero-media {
-        margin-right:20px!important;
-        margin-top:0
-    }
-
-    .icon-facebook {
-        font-size:24px!important
-    }
-
-    .icon-instagram {
-        font-size:24px!important
-    }
-
-    .icon-tiktok {
-        font-size:24px!important
-    }
-
-    .hero-kavarna {
-        display:none!important
-    }
-
-    .hero-kavarna-small {
-        display:block!important
-    }
-}
-
-@media screen and (max-height:750px) and (max-width: 708px) {
-    .hero-media {
-        display:none!important
-    }
-
-    .frekvence {
-        display:none!important
-    }
-
-    .hero-kavarna-small {
-        display:none!important
-    }
-}
-
-@media screen and (max-height:450px) {
-    .hero {
-        height:100vh
-    }
-
-    .hero-media {
-        display:flex!important
-    }
-
-    .frekvence {
-        display:block!important
-    }
-
-    .hero-kavarna-small {
-        display:block!important
-    }
-}
-
-@media screen and (max-height:280px) {
-    .hero-image {
-        display:none!important
-    }
-
-    .frekvence {
-        display:none!important
-    }
-
-    .hero {
-        height:65vh
-    }
-}
-
 @media screen and (max-width:450px) {
     .hero-media {
         display:none!important
     }
-
     .hero-kavarna-small {
-        display:none!important
+        display: none !important;
+    }
+    .frekvence {
+        display: none;
+    }
+    .hero {
+        height:30vh !important;
     }
 }
 
@@ -1201,4 +1075,229 @@ form .dropdown-content {
     width:100%;
     text-align:center;
     margin-bottom:5px
+}
+
+.reklama {
+    margin-right: 12px;
+    color:#fff;
+    padding:24px;
+    font-size:1.4rem;
+    text-align: center;
+    width: 260px;
+}
+
+.big-banner {
+    height: 520px;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.small-banner {
+    height: 174px;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.reklamni-bannery {
+    display: flex;
+    flex-direction: column;
+}
+.reklamni-panel {
+    width:272px; height: 1000px
+}
+.novinky-reklamy {
+    display:flex;
+    justify-content: center;
+}
+footer h5 {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 993px) {
+    .hide-on-med-and-down {
+        display: none !important;
+    }
+    .novinky-reklamy {
+        display: block !important;
+    }
+}
+
+.absolutni-stred-logo {
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 143px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .nav div.main_list ul li a {
+        font-size:2rem
+    }
+
+    nav ul a {
+        padding: 0 5px !important;
+    }
+
+    .nowplay p {
+        font-size: 1.2rem;
+    }
+    .nowplay {
+        line-height: 20px;
+        margin-top: 15px;
+    }
+}
+
+.hero-nadpis {
+    color: white;position: absolute;left: 291px;z-index: 1;text-align: center;line-height: 125%;
+}
+
+.hero-obrazek {
+    margin-right: 10%;
+}
+@media only screen and (max-width: 1350px) {
+    .hero-nadpis {
+        left: 180px;
+    }
+    .frekvence {
+        left:100px;
+    }
+    .hero-kavarna {
+        left:255px;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .hero-nadpis {
+        left: 100px;
+    }
+    .frekvence {
+        left:20px;
+    }
+    .hero-kavarna {
+        left:165px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .hero-nadpis {
+        font-size: 3.2rem;
+        left: 100px;
+        top:195px;
+    }
+    .frekvence {
+        left:50px;
+        top:240px;
+        font-size: 1.8rem;
+        max-width: 500px;
+    }
+    .hero-kavarna {
+        display: none;
+    }
+    .hero-kavarna-small {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hero-obrazek {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .hero-media {
+        margin-right:10px!important;
+        margin-top:20Px
+    }
+
+    .icon-facebook {
+        font-size:36px!important
+    }
+
+    .icon-instagram {
+        font-size:36px!important
+    }
+
+    .icon-tiktok {
+        font-size:36px!important
+    }
+
+    .hero-obrazek { display: none}
+
+    .hero-nadpis {
+        left:50px;
+        max-width: 70%;
+    }
+    .frekvence {
+        left:50px;
+        max-width: 70%;
+    }
+    .hero-kavarna-small {
+            left: 120px;
+    }
+    .hero {
+        height:40vh
+    }
+}
+@media screen and (max-height:920px) {
+    .hero {
+        height:50vh !important;
+    }
+}
+@media screen and (max-width:450px) and (max-height: 700px) {
+    .hero {
+        height:100vh !important;
+    }
+    .hero-nadpis {
+        top:215px !important;
+    }
+}
+@media screen and (max-height:900px) {
+    .hero-nadpis {
+        top: 220px;
+    }
+}
+@media screen and (max-height:700px) {
+    .hero {
+        height:100vh !important;
+    }
+}
+
+@media screen and (max-height:450px) {
+    .hero-nadpis {
+        top: 180px;
+    }
+}
+
+@media screen and (max-height:340px) {
+    .hero-obrazek {
+        display: none;
+    }
+    .hero-kavarna {
+        display: none !important;
+    }
+    .hero-kavarna-small {
+        display: none !important;
+    }
+    .hero-media {
+        display: none;
+    }
+
+    .frekvence {
+        display:none!important
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .hero-nadpis {
+        top: 195px;
+    }
+}
+@media only screen and (min-height: 1100px) {
+    .hero-nadpis {
+        top: 195px;
+    }
 }

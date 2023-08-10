@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Relax Radio. 92,3 FM Kladno 97,4 FM Rakovník 103,4 FM Kralupy nad Vltavou 97,5 FM Beroun 94,8 FM Louny 92,3 FM Kladno 97,4 FM Rakovník 103,4 FM Kralupy nad Vltavou.">
+    <meta name="author" content="Tomáš Březina">
+    <meta name="robots" content="index, follow">
+    <title>Relax Rádio - Nejlepší rádio ve vašem městě</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="kontakty.html">Kontakty</a></li>
+    <li><a href="lidé.html">Lidé</a></li>
+    <li><a href="historie.html">O Relaxu</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+    <li><a href="relaxada.html">Relaxáda</a></li>
+    <li><a href="program.html">Program</a></li>
+    <li><a href="playlist.html">Playlist</a></li>
+</ul>
+
+<nav class="nav">
+    <div class="play">
+        <a class="play-btn" href="https://listen.play.cz/player?shortcut=radio-relax&v="></a>
+        <div class="nowplay">
+            <div class="nowplay-music">
+                <p>Právě hraje:&nbsp;</p>
+                <p class="rol">ZEDD & MAREN MORRIS & BEAUZ - Make You Say &nbsp;</p>
+            </div>
+            <p class="on-air-jmeno">Honza Ladra <span class="on-air-porad">Freshtime</span></p>
+        </div>
+    </div>
+    <a class="grow-on-hover navigacni-hover absolutni-stred-logo" href="index.html">
+        <img src="images/Logo-small.png" width="143" height="62" alt="logo rádia Relax">
+    </a>
+    <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div id="mainListDiv" class="main_list hide-on-med-and-down">
+        <ul class="navlinks">
+            <li><a class="dropdown-trigger" data-target="dropdown2">Hudba<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="tiprelaxu.html">Tip Relaxu</a></li>
+            <li><a href="pejskostranka.html">Pejskostránka</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1">O nás<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile">
+    <li class="logo"><a href="https://listen.play.cz/player?shortcut=radio-relax&v=" class="brand-logo"><img src="images/logo-tiny.png" alt="logo rádia Relax"></a></li>
+    <li><a href="index.html">Domů</a></li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header">Hudba</a>
+                <div class="collapsible-body">
+                    <ul id="hudba" class="">
+                        <li><a href="relaxada.html">Relaxáda</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="playlist.html">Playlist</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><a href="tiprelaxu.html">Tip Relaxu</a></li>
+    <li><a href="pejskostranka.html">Pejskostránka</a></li>
+    <li><a href="partneri.html">Partneři</a></li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header">O nás</a>
+                <div class="collapsible-body">
+                    <ul id="onas" class="">
+                        <li><a href="kontakty.html">Kontakty</a></li>
+                        <li><a href="lidé.html">Lidé</a></li>
+                        <li><a href="historie.html">Historie</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<div class="hero" style="display: flex; align-items: flex-end">
+    <div class="hero-image">
+        <div class="hero-media">
+            <a class="navigacni-hover" href="https://www.instagram.com/relaxradio/"><i class="icon-instagram"></i></a>
+            <a class="navigacni-hover" href="https://www.facebook.com/RelaxRadio923"><i class="icon-facebook"></i></a>
+            <a class="navigacni-hover" href="https://www.tiktok.com/@radio_relax"><i class="icon-tiktok"></i></a>
+        </div>
+
+        <a href="https://www.facebook.com/kavarnaaklubradiarelax" class="waves-effect waves-light btn-large hero-kavarna">Kavárna a Klub rádia Relax</a>
+
+        <a href="https://www.facebook.com/kavarnaaklubradiarelax" class="waves-effect waves-light btn-small hero-kavarna-small">Kavárna a Klub rádia Relax</a>
+
+        <h1 class="hero-nadpis">NEJLEPŠÍ RÁDIO VE VAŠEM MĚSTĚ!</h1>
+        <img class="hero-obrazek" height="300" width="auto" src="images/closeup-smiling-attractive-brunette-girl-listening-music-headphones-enjoying-interesting-podca.png">
+
+    </div>
+
+    <div class="frekvence">
+        <p>92,3 FM Kladno&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97,4 FM Rakovník&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;103,4
+            FM Kralupy nad Vltavou&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97,5 FM Beroun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94,8
+            FM Louny&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;92,3 FM Kladno&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97,4 FM
+            Rakovník&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;103,4 FM Kralupy nad Vltavou&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97,5
+            FM Beroun&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94,8 FM Louny</p>
+    </div>
+
+</div>
+
+
+
+<main>
+    <div class="novinky-reklamy">
+        <div>
+            <h1 class="nadpis z-depth-1">Novinky</h1>
+            <div class="banner">
+                <picture>
+                    <source media="(max-width: 499px)" srcset="images/banner320x50.png">
+                    <source media="(max-width: 759px)" srcset="images/banner468x60.png">
+                    <source media="(max-width: 1200px)" srcset="images/banner728x90.png">
+                    <img  src="images/banner970x90.png" alt="reklamní banner">
+                </picture>
+            </div>
+            <section class="news">
+                <div class="daily-news">
+                    <div class="daily z-depth-1">
+                        <div class="daily-news-picture z-depth-1">
+                            <img class="daily-news-img" src="images/coal_ash_black_background-520x245.jpg" alt="obrázek uhlí">
+                        </div>
+                        <div class="daily-body">
+                            <h3 class="daily-news-title">Co se děje ve skanzenu Mayrau ve Vinařicích</h3>
+                            <div class="daily-news-date">10. 2. 2023</div>
+                            <p class="daily-news-content">Historická těžní věž v areálu hornického skanzenu Mayrau ve Vinařicích
+                                prošla další fází celkové obnovy.</p>
+                            <a class="waves-effect waves-light btn" href="gitaagoro.html">Číst dál</a>
+                        </div>
+                    </div>
+
+                    <div class="daily z-depth-1">
+                        <div class="daily-news-picture z-depth-1">
+                            <img class="daily-news-img" src="images/mestska_policie_teplice-320x320.jpg"
+                                 alt="auto městské policie">
+                        </div>
+                        <div class="daily-body">
+                            <h3 class="daily-news-title">V Lounech se zaměřily na porušování místní vyhlášky</h3>
+                            <div class="daily-news-date">13. 2. 2023</div>
+                            <p class="daily-news-content">Hlídky strážníků Městské policie Louny se v lednu zaměřily na
+                                dodržování vyhlášky města o zákazu požívání alkoholických nápojů na vybraných místech ve městě.
+                            </p>
+                            <a class="waves-effect waves-light btn" href="gitaagoro.html">Číst dál</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="news-button"><a class="waves-effect waves-light btn-large" href="zpravy.html">Starší zprávy</a></div>
+                <div class="banner">
+                    <picture>
+                        <source media="(max-width: 499px)" srcset="images/banner320x50.png">
+                        <source media="(max-width: 759px)" srcset="images/banner468x60.png">
+                        <source media="(max-width: 1200px)" srcset="images/banner728x90.png">
+                        <img  src="images/banner970x90.png" alt="reklamní banner">
+                    </picture>
+                </div>
+                <div class="casual-news">
+                    <div class="music-news z-depth-1">
+                        <div class="music-picture">
+                            <img class="music-img" src="images/jsemProsteTakovej_Cover-720x340.jpg"
+                                 alt="Marpo jsem prostě takovej cover">
+                        </div>
+                        <h3 class="casual-news-title">Marpo – Jsem Prostě Takovej</h3>
+                        <p class="casual-news-uvod">Marpo se pustil do popového tracku.
+                            Výsledkem je chytlavý singl Jsem prostě takovej, který potěší hlavně něžné pohlaví .</p>
+                        <a class="waves-effect waves-light btn" href="marpo.html">Číst dál</a>
+                    </div>
+
+                    <div class="music-news z-depth-1">
+                        <div class="music-picture">
+                            <img class="music-img" src="images/kytka-1536x1285.jpg" alt="Valentýnská květina">
+                        </div>
+                        <h3 class="casual-news-title">Valentýnský speciál</h3>
+                        <p class="casual-news-uvod">V úterý 14. února 2023 tedy na svátek všech zamilovaných pro Vás máme na
+                            Relaxu valentýnské speciální vysílání.
+                            Dopoledne si můžete vyhrát krásnou květinu
+                        </p>
+                        <a class="waves-effect waves-light btn" href="valentyn.html">Chci soutěžit</a>
+                    </div>
+
+                    <div class="music-news z-depth-1">
+                        <div class="music-picture ">
+                            <img class="music-img" src="images/Jeep-Rakovnik.jpg" alt="Jeep před aquaparkem">
+                        </div>
+                        <h3 class="casual-news-title">RELAX na koupališti</h3>
+                        <p class="casual-news-uvod">O prázdninách, když byly ještě horké dny 🙂 jsme se rozhodli
+                            navštívit koupaliště v regionu…</p>
+                        <a class="waves-effect waves-light btn" href="koupaliste.html">Číst dál</a>
+                    </div>
+
+                    <div class="music-news z-depth-1">
+                        <div class="music-picture">
+                            <img class="music-img" src="images/kytka-1536x1285.jpg" alt="Valentýnská květina">
+                        </div>
+                        <h3 class="casual-news-title">Valentýnský speciál</h3>
+                        <p class="casual-news-uvod">V úterý 14. února 2023 tedy na svátek všech zamilovaných pro Vás máme na
+                            Relaxu valentýnské speciální vysílání.
+                            Dopoledne si můžete vyhrát krásnou květinu
+                        </p>
+                        <a class="waves-effect waves-light btn" href="valentyn.html">Chci soutěžit</a>
+                    </div>
+
+                </div>
+
+                <div class="banner">
+                    <picture>
+                        <source media="(max-width: 499px)" srcset="images/banner320x50.png">
+                        <source media="(max-width: 759px)" srcset="images/banner468x60.png">
+                        <source media="(max-width: 1200px)" srcset="images/banner728x90.png">
+                        <img  src="images/banner970x90.png" alt="reklamní banner">
+                    </picture>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="reklamni-panel hide-on-med-and-down">
+            <h1 class="reklama z-depth-1">Reklama</h1>
+            <section class="reklamni-bannery">
+                <div class="big-banner z-depth-1"><img src="images/klokocka_klima.png"></div>
+                <div class="small-banner z-depth-1"><img src="images/terri_banner_standard.png"></div>
+                <div class="big-banner z-depth-1"><img src="images/klokocka_klima.png"></div>
+            </section>
+        </div>
+    </div>
+
+    <div class="pejskove-carousel">
+        <div class="carousel">
+            <a class="carousel-item hoverable" href="aira.html"><img class="z-depth-2" src="images/Aira-320x320.jpg" alt="pes Aira">
+                <p class="pes-name">Aria</p></a>
+            <a class="carousel-item hoverable" href="jim.html"><img class="z-depth-2" src="images/jim-320x320.jpg" alt="pes Jim">
+                <p class="pes-name">Jim</p></a>
+            <a class="carousel-item hoverable" href="lojzik.html"><img class="z-depth-2" src="images/Lojza-320x320.jpg" alt="pes Lojza">
+                <p class="pes-name">Lojza</p></a>
+            <a class="carousel-item hoverable" href="mike.html"><img class="z-depth-2" src="images/mike2-320x320.jpg" alt="pes Mike">
+                <p class="pes-name">Mike</p></a>
+            <a class="carousel-item hoverable" href="sabrina.html"><img class="z-depth-2" src="images/Sabrina1-320x320.jpg"
+                                                                        alt="pes Sabrina">
+                <p class="pes-name">Sabrina</p></a>
+        </div>
+        <a class="waves-effect waves-light btn-large" href="pejskostranka.html">Chci pomoct i dalším pejskům</a>
+    </div>
+
+    <section class="partneri">
+        <div class="partneri-images">
+            <div class="partneri-image">
+                <a href="https://www.mestokladno.cz/"><img src="images/KLADNO-Město-pro-kvalitní-život.png" alt="logo města Kladno"></a>
+            </div>
+            <div class="partneri-image">
+                <a href="https://www.mesto-rakovnik.cz/"><img src="images/podporuji-rakovnik.png" alt="logo města Rakovník"></a>
+            </div>
+            <div class="partneri-image">
+                <a href="https://www.rytirikladno.cz/"><img src="images/HC_Kladno.png" alt="logo Rytíři Kladno"></a>
+            </div>
+            <div class="partneri-image">
+                <a href="https://www.divadlokladno.cz/"><img src="images/divadlo.png" alt="logo Kladneské divadlo"></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l5 s12">
+                <h5 class="white-text">Hudba</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="program.html">Program</a></li>
+                    <li><a class="grey-text text-lighten-3" href="playlist.html">Playlist</a></li>
+                    <li><a class="grey-text text-lighten-3" href="relaxada.html">Relaxáda</a></li>
+                    <li><a class="grey-text text-lighten-3"
+                           href="https://listen.play.cz/player?shortcut=radio-relax&v=">Online vysílání</a></li>
+                </ul>
+            </div>
+            <div class="col l5 s12">
+                <h5 class="white-text">Navigace</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="zpravy.html">Zprávy</a></li>
+                    <li><a class="grey-text text-lighten-3" href="pejskostranka.html">Pejskostránka</a></li>
+                    <li><a class="grey-text text-lighten-3" href="tiprelaxu.html">Tip relaxu</a></li>
+                    <li><a class="grey-text text-lighten-3" href="partneri.html">Partneři</a></li>
+                </ul>
+            </div>
+            <div class="col l2 s12">
+                <h5 class="white-text">O rádiu</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="obchod.html">Obchod</a></li>
+                    <li><a class="grey-text text-lighten-3" href="medialnipodminky.html">Mediální podmínky</a></li>
+                    <li><a class="grey-text text-lighten-3" href="lidé.html">Lidé</a></li>
+                    <li><a class="grey-text text-lighten-3" href="kontakty.html">Kontakty</a></li>
+                    <li><a class="grey-text text-lighten-3" href="images/radio-relax-mapa-pokryti.png">Vysílače</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Relax Radio © 2023. Všechna práva vyhrazena. <br>
+            Zásady zpracování osobních údajů <a class="modal-trigger" href="#modal1">zde</a>
+
+            <a class="grey-text text-lighten-4 right soc" href="https://www.instagram.com/relaxradio/"><i
+                    class="icon-instagram"></i></a>
+            <a class="grey-text text-lighten-4 right soc" href="https://www.facebook.com/RelaxRadio923"><i
+                    class="icon-facebook"></i></a>
+            <a class="grey-text text-lighten-4 right soc" href="https://www.tiktok.com/@radio_relax"><i
+                    class="icon-tiktok"></i></a>
+        </div>
+    </div>
+
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h3>Zásady zpracování osobních údajů (GDPR)</h3>
+        <p>Zásady zpracování osobních údajů dle nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických
+            osob v souvislosti se zpracováním osobních údajů a poučení subjektů údajů (dále jen „GDPR“)</p>
+
+        <h4>1. Obecné údaje o společnosti RADIO RELAX s.r.o. </h4>
+        <p>Sídlo společnosti: budova Galerie Kladno, Cyrila Boudy 8, Kladno 272 01</p>
+        <p> IČO: 48953873</p>
+        <p> DIČ: CZ48953873 </p>
+        <p> Zapsaná: RADIO RELAX s.r.o., C 31238 vedená u Městského soudu v Praze</p>
+        <p> Kontaktní e-mail: obchod@radio-relax.cz, produkce@radio-relax.cz</p>
+
+        <h4> 2. Prohlášení </h4>
+        <p> Společnost RADIO RELAX s.r.o. (dále jen Společnost) plní povinnosti týkající se zpracování osobních údajů,
+            které jí byly předány za účelem plnění smluvních a zákonných povinností. </p>
+        <p> Ochrana osobních údajů vyplývá zejména z Nařízení EU o ochraně osobních údajů č. 2016/679/EU GDPR (General
+            Data Protection Regulation). </p>
+
+        <p> Naše Společnost vystupuje v pozici správce osobních údajů v případě, že určuje v souladu s článkem 4 odst. 7
+            GDPR účel a prostředky zpracování osobních údajů.</p>
+
+        <p> Naše Společnost vystupuje v pozici zpracovatele osobních údajů v případě, kdy v souladu s článkem 4 odst. 8
+            GDPR zpracovává osobní údaje pro správce. </p>
+
+        <h4> 3. Zásady zpracování osobních údajů </h4>
+        <p> Při zpracování osobních údajů plníme vysoké standardy ochrany osobních údajů a dodržujeme zejména
+            následující zásady:
+        <ul>
+            <li> osobní údaje vždy zpracováváme pro jasně a srozumitelně stanovený účel, stanovenými prostředky,
+                stanoveným způsobem, a pouze po dobu, která je nezbytná vzhledem k účelům jejich zpracování;
+                zpracováváme pouze konkrétní osobní údaje a jejich zpracování odpovídá stanoveným účelům a je nezbytné
+                pro naplnění těchto účelů,
+            </li>
+            <li> osobní údaje jsou chráněny způsobem, který je odpovídající aktuálním standardům; je zajištěno velmi
+                vysoké zabezpečení těchto údajů, které zabraňuje jakémukoliv neoprávněnému nebo nahodilému přístupu k
+                osobním údajům, k jejich změně, zničení či ztrátě, neoprávněným přenosům, k jejich jinému neoprávněnému
+                zpracování, jakož i k jinému zneužití,
+            </li>
+            <li> subjekty údajů jsou informováni o zpracování osobních údajů a o nárocích na konkrétní a úplné informace
+                o okolnostech tohoto zpracování, jakož i o dalších souvisejících právech,
+            </li>
+            <li> naše Společnost dodržuje odpovídající technická a organizační opatření, aby byla zajištěna úroveň
+                zabezpečení odpovídající všem možným rizikům; veškeré osoby, které přicházejí do styku s osobními údaji,
+                mají povinnost dodržovat mlčenlivost o informacích získaných v souvislosti se zpracováváním těchto
+                údajů.
+            </li>
+        </ul>
+        <h4> 4. Informace o zpracování osobních údajů </h4>
+        <h5> 4.1. Společnost zpracovává osobní údaje za účelem </h5>
+        <ul>
+            <li> plnění zákonem stanovených povinností, kdy vystupuje v pozici Správce osobních údajů,</li>
+            <li> plnění smluvních povinností, kdy osobní údaje byly předány subjekty údajů,</li>
+            <li> plnění smluvních povinností, kdy osobní údaje byly Společnosti předány správci osobních údajů a naše
+                Společnost vystupuje jako Zpracovatel,
+            </li>
+            <li> pro plnění smluvních povinností, kdy je subjekt údajů účastníkem smlouvy,</li>
+            <li> ochrany práv a oprávněných zájmů naší Společnosti.</li>
+        </ul>
+        <h5> 4.2. Rozsah zpracovávaných osobních údajů </h5>
+        <p>Společnost zpracovává osobní údaje v rozsahu nezbytné pro naplnění výše uvedených účelů. Jsou zpracovávány
+            následující typy osobních údajů (kategorie osobních údajů, které jsou předmětem zpracování):</p>
+        <ul>
+            <li> adresní a identifikační údaje sloužící k jednoznačné a nezaměnitelné identifikaci subjektu údajů (např.
+                jméno, příjmení, datum narození, adresa trvalého pobytu atd.) a údaje umožňující kontakt se subjektem
+                údajů (tj. kontaktní údaje – např. kontaktní adresa, číslo telefonu, e-mailová adresa, číslo občanského
+                průkazu, kamerový záznam a jiné obdobné informace),
+            </li>
+            <li> popisné údaje (např. bankovní spojení),</li>
+            <li> další údaje nezbytné pro plnění smlouvy,</li>
+            <li> údaje poskytnuté nad rámec příslušných zákonů zpracovávané v rámci uděleného souhlasu ze strany
+                subjektu údajů (zpracování fotografií – kamerových záznamů, použití osobních údajů za účelem
+                personálních řízení, zdravotní údaje aj.).
+            </li>
+            <li> Naše Společnost nezpracovává zvláštní kategorie osobních údajů, pokud k jejich zpracování není dán
+                zákonný důvod.
+            </li>
+        </ul>
+
+        <h5> 4.3. Způsob zpracování a ochrany osobních údajů </h5>
+        <p> Způsob, kterým naše Společnost zpracovává osobní údaje, zahrnuje manuální i automatizované zpracování v
+            informačním systému naší Společnosti. Správce prohlašuje, že k osobním údajům mají přístup pouze jím
+            pověřené osoby-zaměstnanci Společnosti a v potřebném rozsahu také třetí osoby. Před jakýmkoliv předáním
+            osobních údajů třetí osobě je s touto osobou uzavřena smlouva, která obsahuje stejné záruky pro zpracování
+            osobních údajů, jaké v souladu se svými zákonnými povinnostmi dodržuje naše Společnost.</p>
+        <p> Naše Společnost přijala technicko-organizační opatření k zajištění ochrany osobních údajů, zejména opatření,
+            aby nemohlo dojít k neoprávněnému nebo nahodilému přístupu k osobním údajům, jejich změně, zničení či
+            ztrátě, neoprávněným přenosům, k jejich neoprávněnému zpracování, jakož i k jinému zneužití osobních
+            údajů.</p>
+
+        <h5> 4.4. Kategorie subjektů údajů </h5>
+        <ul>
+            <li> zákazník</li>
+            <li> zaměstnanec</li>
+            <li> dodavatel služby/zboží</li>
+            <li> jiná osoba, které je ve smluvním vztahu ke správci</li>
+            <li> uchazeč o zaměstnání</li>
+        </ul>
+        <h5> 4.5. Příjemci osobních údajů </h5>
+        <p> Osobní údaje jsou zpřístupněny zejména zaměstnancům naší Společnosti v souvislosti s plněním jejich
+            pracovních povinností, při kterých je nutné nakládat s osobními údaji, pouze však v rozsahu, který je v tom
+            kterém případě nezbytný a při dodržení veškerých bezpečnostních opatření.</p>
+        <p>Osobní údaje mohou být třetím osobám, které se podílejí na zpracování osobních údajů, případně jim tyto
+            osobní údaje mohou být zpřístupněny z jiného důvodu v souladu se zákonem.</p>
+        <p> Před jakýmkoliv předáním osobních údajů třetí osobě je vždy s touto osobou uzavřena písemná smlouva, která
+            upraví zpracování osobních údajů tak, aby obsahovala stejné záruky pro zpracování osobních údajů, jaké v
+            souladu se svými zákonnými povinnostmi dodržuje sama naše Společnost.</p>
+        <p> V souladu s příslušnými právními předpisy je Společnost oprávněna nebo přímo povinna předávat Vaše osobní
+            údaje:</p>
+        <ul>
+            <li> příslušným orgánům státní správy, soudům a orgánům činným v trestním řízení za účelem plnění jejich
+                povinností a pro účely výkonu rozhodnutí,
+            </li>
+            <li> subjektům státní správy a jiným orgánům veřejné moci z důvodu plnění zákonných povinností,</li>
+            <li> dalším osobám v rozsahu stanoveném právními předpisy, například třetím osobám pro účely vymáhání
+                pohledávek, apod.
+            </li>
+        </ul>
+        <h5> 4.6. Předávání osobních údajů do zahraničí </h5>
+        <p> Osobní údaje jsou zpracovávány na území České republiky. Naše společnost nepředává osobní údaje do zemí mimo
+            Evropskou unii.</p>
+
+        <h5> 4.7. Doba zpracování osobních údajů </h5>
+        <p> Osobní údaje zpracovává naše Společnost pouze po dobu, která je nezbytná vzhledem k účelům jejich
+            zpracování.</p>
+        <p> Doba uchovávání osobních údajů vyplývá z jednotlivých právních předpisů, na základě kterých naše Společnost
+            zpracovává osobní údaje.</p>
+        <p> V případě, že osobní údaje jsou zpracovávány z důvodu plnění smluvní povinnosti, je nezbytné za účelem
+            ochrany práv a oprávněných zájmů naší Společnosti zpracovávat osobní údaje po dobu maximálně 10 let ode dne
+            předání díla. </p>
+        <p> V případě, kdy jsou osobní údaje zpracovávány na základě souhlasu subjektů údajů, jsou tyto údaje
+            zpracovávány po dobu nezbytně nutnou ode dne udělení souhlasu. </p>
+
+        <h5> 4.8. Poučení </h5>
+        <p> Správce – Společnost zpracovává údaje se souhlasem subjektu údajů s výjimkou zákonem stanovených případů,
+            kdy zpracování osobních údajů nevyžaduje souhlas subjektu údajů. </p>
+
+        <p>V souladu se čl. 6 odst. 1 GDPR může správce bez souhlasu subjektu údajů zpracovávat tyto údaje:</p>
+        <ul>
+            <li> subjekt údajů udělil souhlas pro jeden či více konkrétních účelů,</li>
+            <li> zpracování je nezbytné pro splnění smlouvy, jejíž smluvní stranou je subjekt údajů, nebo pro provedení
+                opatření přijatých před uzavřením smlouvy na žádost tohoto subjektu údajů,
+            </li>
+            <li> zpracování je nezbytné pro splnění právní povinnosti, která se na správce vztahuje,</li>
+            <li> zpracování je nezbytné pro ochranu životně důležitých zájmů subjektu údajů nebo jiné fyzické osoby,
+            </li>
+            <li> zpracování je nezbytné pro splnění úkolu prováděného ve veřejném zájmu nebo při výkonu veřejné moci,
+                kterým je pověřen správce,
+            </li>
+            <li> zpracování je nezbytné pro účely oprávněných zájmů příslušného správce či třetí strany, kromě případů,
+                kdy před těmito zájmy mají přednost zájmy nebo základní práva a svobody subjektu údajů vyžadující
+                ochranu osobních údajů.
+            </li>
+        </ul>
+        <h5> 4.9. Práva subjektů údajů </h5>
+        <p> Subjekty údajů mají v rozsahu s jednotlivými články GDPR zejména následující práva: </p>
+        <ul>
+            <li> právo na informace o správci (zpracovateli) osobních údajů,</li>
+            <li> právo na přístup k osobním údajům, a zda jsou osobní údaje zpracovávány či nikoli dle čl. 15 GDPR,</li>
+            <li> právo na opravu osobních údajů dle čl. 16 GDPR,</li>
+            <li> právo na výmaz osobních údajů dle čl. 17 GDPR,</li>
+            <li> právo na omezení zpracování dle čl. 18 GDPR,</li>
+            <li> právo na přenositelnost osobních údajů dle čl. 20 GDPR,</li>
+            <li> právo na informace o účelu zpracování osobních údajů,</li>
+            <li> právo vznést námitku proti zpracování dle čl. 21 GDPR,</li>
+            <li> právo podat stížnost,</li>
+            <li> právo odvolat souhlas se zpracováním osobních údajů písemně nebo elektronicky na adresu nebo e-mail
+                společnosti uvedený v čl. 1 těchto zásad,
+            </li>
+            <li> veškerá další práva přiznaná Nařízením.</li>
+        </ul>
+        <h5> 4.10. Dozorový orgán </h5>
+        <p> Dozorovým orgánem ve věci zpracování osobních údajů je Úřad pro ochranu osobních údajů. </p>
+        <p> Adresa: </p>
+        <p> Úřad pro ochranu osobních údajů</p>
+        <p> Pplk. Sochora 27 </p>
+        <p> 170 00 Praha 7 </p>
+        <p> Telefon: +420 234 665 111 </p>
+        <p> E-mail: posta@uoou.cz </p>
+        <p> Web: www.uoou.cz </p>
+
+        <h4> 5. Závěr </h4>
+        <p> Společnost přistupuje odpovědně k ochraně osobních údajů, které v rámci své činnosti zpracovává. V případě
+            dotazů nebo podnětů ze strany subjektů údajů nás kontaktujte písemně nebo elektronicky na adresu nebo e-mail
+            společnosti uvedený v čl. 1 těchto zásad. </p>
+        <p> Společnost má právo za poskytnutí informací požadovat přiměřenou úhradu nepřevyšující náklady nezbytné na
+            jejich poskytnutí. </p>
+
+        <p> Toto prohlášení je umístěné na webových stránkách správce – RADIO RELAX s.r.o. </p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect btn-flat">Ok</a>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

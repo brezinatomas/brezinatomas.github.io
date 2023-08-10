@@ -30,7 +30,6 @@ $(window).scroll(function() {
         $('.nav p').css('color','white');
         $('.dropdown-content').css('background-color','#1e619c');
         $('.dropdown-content li a').css('color','white');
-        $('.top-logo').addClass('mini-logo');
         console.log("OK");
     } else {
         $('.nav').removeClass('affix');
