@@ -1050,7 +1050,7 @@ nav ul li {
         min-height: 320px !important;
     }
 }
-@media screen and (max-width:316px) {
+@media screen and (max-width:321px) {
     .frekvence {
         display: none !important;
     }
@@ -1243,7 +1243,8 @@ footer h5 {
             left: 120px;
     }
     .hero {
-        height:40vh
+        height:40vh;
+        max-height: 420px !important;
     }
 }
 @media screen and (max-height:900px) {
