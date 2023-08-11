@@ -1047,10 +1047,10 @@ nav ul li {
     }
 
     .hero{
-        min-height: 320px !important;
+        min-height: 340px !important;
     }
 }
-@media screen and (max-width:321px) {
+@media screen and (max-width:332px) {
     .frekvence {
         display: none !important;
     }
