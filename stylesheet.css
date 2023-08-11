@@ -1038,20 +1038,24 @@ nav ul li {
     position:absolute;
     display:none
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:420px) {
     .hero-media {
         display:none!important
     }
     .hero-kavarna-small {
         display: none !important;
     }
-    .frekvence {
-        display: none;
-    }
-    .hero {
-        height:30vh !important;
+
+    .hero{
+        min-height: 320px !important;
     }
 }
+@media screen and (max-width:316px) {
+    .frekvence {
+        display: none !important;
+    }
+}
+
 
 form .dropdown-content {
     background-color:#fff!important
@@ -1242,62 +1246,23 @@ footer h5 {
         height:40vh
     }
 }
-@media screen and (max-height:920px) {
-    .hero {
-        height:50vh !important;
-    }
-}
-@media screen and (max-width:450px) and (max-height: 700px) {
-    .hero {
-        height:100vh !important;
-    }
-    .hero-nadpis {
-        top:215px !important;
-    }
-}
 @media screen and (max-height:900px) {
     .hero-nadpis {
         top: 220px;
     }
 }
-@media screen and (max-height:700px) {
-    .hero {
-        height:100vh !important;
-    }
-}
-
-@media screen and (max-height:450px) {
-    .hero-nadpis {
-        top: 180px;
-    }
-}
-
-@media screen and (max-height:340px) {
-    .hero-obrazek {
-        display: none;
-    }
-    .hero-kavarna {
-        display: none !important;
-    }
-    .hero-kavarna-small {
-        display: none !important;
-    }
-    .hero-media {
-        display: none;
-    }
-
-    .frekvence {
-        display:none!important
-    }
-}
-
 @media screen and (max-width: 595px) {
     .hero-nadpis {
         top: 195px;
     }
 }
-@media only screen and (min-height: 1100px) {
+@media only screen and (min-height: 1060px) {
     .hero-nadpis {
         top: 195px;
     }
+}
+
+.hero {
+    max-height: 550Px;
+    min-height: 440px;
 }
