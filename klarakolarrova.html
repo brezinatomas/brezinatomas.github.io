@@ -3,10 +3,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Radio Relax přináší novinky nejen z regionu, ale i aktuálního dění kolem hudby a probíhajících soutěží.">
+    <meta name="description" content="Poslouchejte podcasty na rádiu Relax.">
     <meta name="author" content="Tomáš Březina">
     <meta name="robots" content="index, follow">
-    <title>Relax Rádio - Podcasty</title>
+    <title>Relax Rádio - Klára Kollárová</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
@@ -97,27 +97,22 @@
 
 <main>
     <section class="program">
-        <h1 class="program-nadpis">Podcasty</h1>
+        <h1 class="program-nadpis">Someliérka Klára Kollárová</h1>
         <div class="row">
             <div class="col s12">
-
-                <div class="daily daily-archiv z-depth-1">
-                    <div class="daily-news-picture z-depth-1">
-                        <img class="daily-news-img" src="images/SoundCloud-Klara_Kollarova_web.png"
-                             alt="podcast Klara Kollarova">
+                <div class="article-body z-depth-1">
+                    <div class="article-picture z-depth-1">
+                        místo tohole obrázku tu bude widget od soundcloudu
+                        <img src="images/Mike1-1536x1024.jpg" alt="Klára Kollárová">
                     </div>
-                    <div class="daily-body">
-                        <h3 class="daily-news-title">Someliérka Klára Kollárová</h3>
-                        <div class="daily-news-date">19. 5. 2023</div>
-                        <p class="daily-news-content">V dalším díle našeho podcastu vám přinášíme rozhovor s národní someliérkou Klárou Kollárovou. Dozvíte se jakým odrůdám se v naší zemi nejvíce daří, nechybí informace o uzávěrech vína, o správných sklenicích a teplotách pro konzumaci vína.</p>
-                        <a class="waves-effect waves-light btn" href="klarakolarrova.html">chci poslouchat</a>
+                    <div class="article-content">
+                        <h4>V dalším díle našeho podcastu vám přinášíme rozhovor s národní someliérkou Klárou Kollárovou. Dozvíte se jakým odrůdám se v naší zemi nejvíce daří, nechybí informace o uzávěrech vína, o správných sklenicích a teplotách pro konzumaci vína.
+                        </h4>
+                        <p></p>
                     </div>
                 </div>
-
-
             </div>
         </div>
-        <a class="waves-effect waves-light btn-large" id="load-more-news">Načíst Další </a>
     </section>
 </main>
 
@@ -370,26 +365,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="script.js"></script>
-<script>
-
-    let loadMoreBtn = document.querySelector('#load-more-news');
-    let currentItem = 5;
-
-    loadMoreBtn.onclick = () =>{
-        let boxes = [...document.querySelectorAll('.daily-archiv')];
-        for (let i = currentItem; i < currentItem + 5; i++) {
-            if (i === boxes.length) {
-                break;
-            }
-            boxes[i].classList.add("daily-archiv-more");
-        }
-        currentItem += 5;
-
-        if(currentItem >= boxes.length){
-            loadMoreBtn.style.display = 'none';
-        }
-    }
-
-</script>
 </body>
 </html>
