@@ -28,7 +28,9 @@
 .icon-instagram:before {
     content:"\ea92"
 }
-
+.icon-spotify:before {
+    content:"\ea94"
+}
 .icon-tiktok:before {
     content:"\e900"
 }
@@ -1011,7 +1013,7 @@ nav ul li {
 .hero-media {
     position:absolute;
     right:0;
-    top:160px;
+    top:140px;
     display:flex;
     flex-direction:column;
     margin-right:25px
@@ -1222,6 +1224,9 @@ footer h5 {
     }
 
     .icon-instagram {
+        font-size:36px!important
+    }
+    .icon-spotify {
         font-size:36px!important
     }
 
