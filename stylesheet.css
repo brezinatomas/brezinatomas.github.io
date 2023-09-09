@@ -1132,7 +1132,7 @@ form .dropdown-content {
     flex-direction: column;
 }
 .reklamni-panel {
-    width:272px; height: 1000px
+    width:272px;
 }
 .novinky-reklamy {
     display:flex;
@@ -1142,12 +1142,20 @@ footer h5 {
     font-size: 1.8rem;
 }
 
+.mobile-only {
+    display: none;
+}
+
 @media only screen and (max-width: 993px) {
     .hide-on-med-and-down {
         display: none !important;
     }
     .novinky-reklamy {
         display: block !important;
+    }
+    .mobile-only {
+        display: block;
+        margin: auto;
     }
 }
 
