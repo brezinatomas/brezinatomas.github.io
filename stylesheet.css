@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@200&display=swap');
 
 @font-face {
     font-family:'icomoon';
@@ -81,7 +81,8 @@ html,body {
     text-decoration:none;
     color:#1e619c;
     line-height:65px;
-    font-size:2.4rem
+    font-size:2.4rem;
+    font-family: 'Anton', sans-serif !important;
 }
 
 .sidenav-trigger {
@@ -383,7 +384,7 @@ main {
 
 .btn {
     margin:10px;
-    background-color:#c20e1a
+    background-color:#c20e1a;
 }
 
 .btn:hover {
@@ -417,7 +418,7 @@ main {
 
 .casual-news-uvod {
     margin:0 30px;
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     min-height:70px
 }
@@ -461,7 +462,7 @@ main {
 }
 
 .daily-news-content {
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     margin:10px 30px;
     max-height: 70px;
@@ -511,6 +512,13 @@ h1, h2 {
     color:#c20e1a
 }
 
+.footer-copyright {
+    font-family: 'Antonio', sans-serif;
+}
+
+.modal-content p, .modal-content ul{
+    font-family: 'Antonio', sans-serif;
+}
 
 .partneri-images {
     margin: auto;
@@ -630,7 +638,7 @@ h1, h2 {
 
 .porad p {
     padding:10px;
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     min-height:50px
 }
@@ -668,8 +676,21 @@ h1, h2 {
     margin:auto
 }
 
+table {
+    font-family: 'Antonio', sans-serif;
+}
+
+th {
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+}
+
+.pozice {
+    font-family: 'Antonio', sans-serif;
+}
+
 td,.headline {
-    text-align:center
+    text-align:center;
 }
 
 .charts-vote {
@@ -679,11 +700,12 @@ td,.headline {
 }
 
 input {
-    font-family:'Anton',sans-serif
+    font-family:'Antonio',sans-serif
 }
 
 .button-hlasovat input {
-    color:#fff
+    color:#fff;
+    font-family: 'Anton', sans-serif !important;
 }
 
 .btn-large {
@@ -703,7 +725,8 @@ input {
 }
 
 .dropdown-content li>a,.dropdown-content li>span {
-    color:#000
+    color:#000;
+    font-family: 'Antonio', sans-serif;
 }
 
 .input-field>label {
@@ -743,7 +766,7 @@ input {
 
 .obchod p {
     padding:10px;
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     text-align:justify
 }
@@ -754,7 +777,7 @@ input {
 }
 
 .obchod ul li {
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:14px;
     text-align:justify;
     padding-right:20px;
@@ -780,7 +803,7 @@ input {
 
 .kontakt p {
     padding:0;
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     margin:5px
 }
@@ -838,7 +861,7 @@ input[type=text]:focus {
 }
 
 .article-content p {
-    font-family:sans-serif;
+    font-family: 'Antonio', sans-serif;
     font-size:15px;
     min-height:50px;
     line-height:1.6
@@ -1287,4 +1310,10 @@ footer h5 {
     .soc {
             float: none !important;
     }
+}
+.waves-button-input {
+    font-family: 'Anton', sans-serif;
+}
+.porad .row {
+    font-family: 'Antonio', sans-serif;
 }
