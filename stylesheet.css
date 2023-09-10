@@ -1356,3 +1356,7 @@ footer h5 {
     }
 
 }
+
+.kavarna-picture {
+   max-height: 350px;overflow: hidden;
+}
