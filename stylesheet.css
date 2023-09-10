@@ -1325,3 +1325,11 @@ footer h5 {
 .porad .row {
     font-family: 'Antonio', sans-serif;
 }
+
+.tiprelaxu-picture {
+    width: 100%;
+    aspect-ratio: auto;
+}
+.tiprelaxu-img {
+    width: 100%;
+}
