@@ -619,7 +619,7 @@ h1, h2 {
         font-size:14px
     }
 
-    #hitlist {
+    #hitlist, .relaxada-porad {
         font-size:1.4rem!important;
         width:90%!important
     }
@@ -630,6 +630,9 @@ h1, h2 {
 
     h4 {
         font-size:14px!important
+    }
+    .relaxada-time {
+        font-size:18px!important
     }
 }
 
@@ -1359,4 +1362,13 @@ footer h5 {
 
 .kavarna-picture {
    max-height: 350px;overflow: hidden;
+}
+.relaxada-porad {
+    width: 80%; margin-bottom: 20px;max-width: none;text-align: center;
+}
+.relaxada-time {
+    padding: 5px !important;
+}
+.daily-news-picture-relaxada {
+  width: 200px; height: 200px;margin: 0 0 0 0;
 }
